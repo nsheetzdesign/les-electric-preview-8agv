@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Electric - Your Trusted Local Business Partner</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl md:text-2xl font-bold">⚡ Les Electric</h1>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-secondary transition-colors">Home</a>
+                    <a href="#services" class="hover:text-secondary transition-colors">Services</a>
+                    <a href="#about" class="hover:text-secondary transition-colors">About</a>
+                    <a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
+                </nav>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-secondary transition-colors">Home</a>
+                <a href="#services" class="block py-2 hover:text-secondary transition-colors">Services</a>
+                <a href="#about" class="block py-2 hover:text-secondary transition-colors">About</a>
+                <a href="#contact" class="block py-2 hover:text-secondary transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-primary to-blue-800 text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="inline-block bg-secondary p-6 rounded-full mb-6">
+                    <span class="text-4xl">⚡</span>
+                </div>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Your Trusted Local Business Partner</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Serving the Lombard community with personalized, accessible services tailored to your neighborhood needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-secondary hover:bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Get Started Today
+                </a>
+                <a href="#services" class="border-2 border-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Professional Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We provide comprehensive professional services designed to meet the unique needs of our local community.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="bg-primary p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <span class="text-white text-xl">🔧</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Expert Solutions</h3>
+                    <p class="text-gray-600">Professional expertise delivered with attention to detail and commitment to quality results.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="bg-accent p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <span class="text-white text-xl">🏠</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Local Focus</h3>
+                    <p class="text-gray-600">Dedicated to serving our immediate community with personalized, accessible service options.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="bg-secondary p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <span class="text-white text-xl">⭐</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quality Service</h3>
+                    <p class="text-gray-600">Committed to delivering exceptional service that meets and exceeds our customers' expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Les Electric</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We are a community-focused local business dedicated to serving the residents and businesses of Lombard and the surrounding area. Our commitment is to provide personalized, accessible services that truly understand and meet the unique needs of our neighborhood.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        As your trusted local business partner, we believe in building lasting relationships with our community through reliable service, honest communication, and a genuine commitment to helping our neighbors succeed.
+                    </p>
+                    <div class="flex items-center space-x-4 text-gray-600">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">📍</span>
+                            <span>Lombard, IL</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">🤝</span>
+                            <span>Community Focused</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-blue-800 p-8 rounded-lg text-white">
+                    <h3 class="text-2xl font-bold mb-4">Why Choose Us?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-3">✓</span>
+                            <span>Local expertise and community knowledge</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-3">✓</span>
+                            <span>Personalized service tailored to your needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-3">✓</span>
+                            <span>Committed to building lasting relationships</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-3">✓</span>
+                            <span>Accessible and responsive communication</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Ready to work with your trusted local business partner? Contact us today to discuss your needs.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary p-3 rounded-full mr-4">
+                                <span class="text-white">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Address</p>
+                                <p class="text-gray-600">909 S Stewart Ave<br>Lombard, IL 60148, USA</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-secondary p-3 rounded-full mr-4">
+                                <span class="text-white">📞</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-full mr-4">
+                                <span class="text-white">✉️</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">info@leselectric.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="mb-4">
+                    <h3 class="text-xl font-bold flex items-center justify-center">
+                        <span class="mr-2">⚡</span>
+                        Les Electric
+                    </h3>
+                    <p class="text-gray-400 mt-2">Your Trusted Local Business Partner</p>
+                </div>
+                <div class="border-t border-gray-700 pt-4">
+                    <p class="text-sm text-gray-400">© 2026 Les Electric. All rights reserved.</p>
+                    <p class="text-xs text-gray-500 mt-1">Preview site by Nick Sheetz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
